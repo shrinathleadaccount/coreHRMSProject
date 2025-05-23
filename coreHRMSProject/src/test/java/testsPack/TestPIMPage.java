@@ -14,7 +14,7 @@ public class TestPIMPage extends BasePage {
 		
 		PIMPage pimPage = new PIMPage();
 		
-		@Test(description="Verify that an employee can be added successfully",priority=0)
+		@Test(description="Verify that an employee can be added successfully",priority=0,enabled=true)
 		public void addEmployee() throws Exception {
 		    
 		    // Log in to the application using the login page method
@@ -40,11 +40,11 @@ public class TestPIMPage extends BasePage {
 
 		    
 		    // Enter the first name "Sai" into the first name field
-		    CommonUtils.enterValue(PIMPage.getFirstName(), "Kosmik", true);
+		    CommonUtils.enterValue(PIMPage.getFirstName(), "Steve", true);
 		    
 		    
 		    // Enter the last name "P" into the last name field
-		    CommonUtils.enterValue(PIMPage.getLastName(), "Doom", true);
+		    CommonUtils.enterValue(PIMPage.getLastName(), "Rogers", true);
 		    
 		    
 		    // Click the "Save" button to add the new employee
@@ -66,19 +66,20 @@ public class TestPIMPage extends BasePage {
 		
 		@Test(description="Verify that employee details can be edited successfully",dependsOnMethods= {"searchEmployee"},groups= {"Smoke"},priority=2,enabled=false)
 		public void editEmployeeDetails() throws Exception {
-//		    Assert.assertEquals("Akki", "Akki");
+
 		
 		}
 		
 		@Test(description="Verify that an employee can be deleted successfully",priority=3,enabled=false)
 		public void deleteEmployee() throws Exception {
 		 
+			
 		
 		}
 		
 		@Test(description="Verify that the employee list is displayed correctly with accurate information",priority=4,enabled=false)
 		public void viewEmployeeList() throws Exception {
-//			Assert.assertEquals("akki", "akki");
+
 		
 		}
 		

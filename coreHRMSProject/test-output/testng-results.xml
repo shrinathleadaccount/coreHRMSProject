@@ -2,20 +2,20 @@
 <testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-22T18:43:43 IST" name="Default suite" finished-at="2025-05-22T18:44:03 IST" duration-ms="19612">
+  <suite started-at="2025-05-23T20:39:28 IST" name="Default suite" finished-at="2025-05-23T20:39:47 IST" duration-ms="19253">
     <groups>
     </groups>
-    <test started-at="2025-05-22T18:43:43 IST" name="Default test" finished-at="2025-05-22T18:44:03 IST" duration-ms="19612">
+    <test started-at="2025-05-23T20:39:28 IST" name="Default test" finished-at="2025-05-23T20:39:47 IST" duration-ms="19253">
       <class name="testsPack.TestPIMPage">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testsPack.TestPIMPage@37ceb1df]" started-at="2025-05-22T18:43:43 IST" name="beforeTest" finished-at="2025-05-22T18:43:49 IST" duration-ms="6217" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testsPack.TestPIMPage@14fc5f04]" started-at="2025-05-23T20:39:28 IST" name="beforeTest" finished-at="2025-05-23T20:39:33 IST" duration-ms="5893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="addEmployee()[pri:0, instance:testsPack.TestPIMPage@37ceb1df]" started-at="2025-05-22T18:43:49 IST" name="addEmployee" description="Verify that an employee can be added successfully" finished-at="2025-05-22T18:44:03 IST" duration-ms="13346" status="PASS">
+        <test-method signature="addEmployee()[pri:0, instance:testsPack.TestPIMPage@14fc5f04]" started-at="2025-05-23T20:39:33 IST" name="addEmployee" description="Verify that an employee can be added successfully" finished-at="2025-05-23T20:39:47 IST" duration-ms="13314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployee -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testsPack.TestPIMPage@37ceb1df]" started-at="2025-05-22T18:44:03 IST" name="afterTest" finished-at="2025-05-22T18:44:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testsPack.TestPIMPage@14fc5f04]" started-at="2025-05-23T20:39:47 IST" name="afterTest" finished-at="2025-05-23T20:39:47 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
