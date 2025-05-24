@@ -84,6 +84,7 @@ public class TestPIMPage extends BasePage {
 		@Test(description="Verify that employee details can be edited successfully",dependsOnMethods= {"searchEmployee"},groups= {"Smoke"},priority=2,enabled=false)
 		public void editEmployeeDetails() throws Exception {
 
+			System.out.println("Edit Employee page");
 		
 		}
 		
