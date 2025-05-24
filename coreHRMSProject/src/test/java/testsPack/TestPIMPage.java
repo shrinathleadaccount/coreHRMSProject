@@ -84,7 +84,29 @@ public class TestPIMPage extends BasePage {
 		@Test(description="Verify that employee details can be edited successfully",dependsOnMethods= {"searchEmployee"},groups= {"Smoke"},priority=2,enabled=false)
 		public void editEmployeeDetails() throws Exception {
 
-			System.out.println("Edit Employee page");
+			//Login
+			loginPage.login();
+			
+			//Switch to Frame
+		    CommonUtils.switchToFrame(PIMPage.getFrame());
+		    
+		    //CLick on Employee Name 
+		    CommonUtils.clickElement(PIMPage.getEmpName());
+		    
+		    //Click on Edit Button
+		    
+		    CommonUtils.clickElement(PIMPage.getEditBtn());
+		    
+		    //Get LastName 
+		    
+		    CommonUtils.enterValue(PIMPage.getLastName(), "Doom", true);
+		    
+		    //Click on save btn
+		    
+		    CommonUtils.clickElement(PIMPage.getEditBtn());
+		    
+		    //Click on back button
+			CommonUtils.clickElement(PIMPage.getBackButton());
 		
 		}
 		

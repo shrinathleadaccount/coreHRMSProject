@@ -19,7 +19,8 @@ public class PIMPage {
 		private final static By by_select = By.xpath("//select[@id='loc_code']");
 		private final static By by_search = By.xpath("//input[@id='loc_name']");
 		private final static By by_searchBtn = By.xpath("//input[@class='plainbtn']");
-		
+		private final static By by_editBtn = By.xpath("//input[@id='btnEditPers']");
+		 
 		// Getter/Setter Helping functions
 		public static void clickOnElement() throws Exception {
 			CommonUtils.clickElement(getPim());
@@ -69,6 +70,10 @@ public class PIMPage {
 		public static By getEmpName() {
 			// TODO Auto-generated method stub
 			return by_empName;
+		}
+		
+		public static By getEditBtn() {
+			return by_editBtn;
 		}
 	
 }
