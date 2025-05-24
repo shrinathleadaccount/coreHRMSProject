@@ -15,7 +15,10 @@ public class PIMPage {
 		private final static By by_iframe = By.xpath("//iframe[@id='rightMenu']");
 		private final static By by_save = By.xpath("//input[@id='btnEdit']");
 		private final static By by_back = By.xpath("//input[@class='backbutton']");
-		private final static By by_empName = By.xpath("//a[contains(text(),'Satya')]");
+		private final static By by_empName = By.xpath("//a[contains(text(),'Odin')]");
+		private final static By by_select = By.xpath("//select[@id='loc_code']");
+		private final static By by_search = By.xpath("//input[@id='loc_name']");
+		private final static By by_searchBtn = By.xpath("//input[@class='plainbtn']");
 		
 		// Getter/Setter Helping functions
 		public static void clickOnElement() throws Exception {
@@ -46,11 +49,25 @@ public class PIMPage {
 			return by_save;
 		}
 		
-		public static By getBackButton() throws Exception {
+		public static By getSelect() throws Exception {
+			return by_select;
+		}
+		
+		public static By getSearch() throws Exception {
+			return by_search;
+		}
+		
+		public static By getSearchBtn() throws Exception {
+			return by_searchBtn;
+		}
+
+		public static By getBackButton() {
+			// TODO Auto-generated method stub
 			return by_back;
 		}
 		
-		public static By getEmpName() throws Exception {
+		public static By getEmpName() {
+			// TODO Auto-generated method stub
 			return by_empName;
 		}
 	

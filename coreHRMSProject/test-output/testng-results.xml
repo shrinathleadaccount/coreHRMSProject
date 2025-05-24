@@ -2,20 +2,23 @@
 <testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-23T20:39:28 IST" name="Default suite" finished-at="2025-05-23T20:39:47 IST" duration-ms="19253">
+  <suite started-at="2025-05-24T11:03:13 IST" name="Default suite" finished-at="2025-05-24T11:03:22 IST" duration-ms="9277">
     <groups>
+      <group name="Smoke">
+        <method signature="TestPIMPage.searchEmployee()[pri:1, instance:testsPack.TestPIMPage@68c9d179]" name="searchEmployee" class="testsPack.TestPIMPage"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2025-05-23T20:39:28 IST" name="Default test" finished-at="2025-05-23T20:39:47 IST" duration-ms="19253">
+    <test started-at="2025-05-24T11:03:13 IST" name="Default test" finished-at="2025-05-24T11:03:22 IST" duration-ms="9277">
       <class name="testsPack.TestPIMPage">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testsPack.TestPIMPage@14fc5f04]" started-at="2025-05-23T20:39:28 IST" name="beforeTest" finished-at="2025-05-23T20:39:33 IST" duration-ms="5893" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testsPack.TestPIMPage@68c9d179]" started-at="2025-05-24T11:03:13 IST" name="beforeTest" finished-at="2025-05-24T11:03:17 IST" duration-ms="4277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="addEmployee()[pri:0, instance:testsPack.TestPIMPage@14fc5f04]" started-at="2025-05-23T20:39:33 IST" name="addEmployee" description="Verify that an employee can be added successfully" finished-at="2025-05-23T20:39:47 IST" duration-ms="13314" status="PASS">
+        <test-method signature="searchEmployee()[pri:1, instance:testsPack.TestPIMPage@68c9d179]" started-at="2025-05-24T11:03:17 IST" name="searchEmployee" description="Verify that the search functionality returns the correct employee" finished-at="2025-05-24T11:03:22 IST" duration-ms="4950" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testsPack.TestPIMPage@14fc5f04]" started-at="2025-05-23T20:39:47 IST" name="afterTest" finished-at="2025-05-23T20:39:47 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- searchEmployee -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testsPack.TestPIMPage@68c9d179]" started-at="2025-05-24T11:03:22 IST" name="afterTest" finished-at="2025-05-24T11:03:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

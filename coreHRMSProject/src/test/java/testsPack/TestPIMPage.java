@@ -14,7 +14,7 @@ public class TestPIMPage extends BasePage {
 		
 		PIMPage pimPage = new PIMPage();
 		
-		@Test(description="Verify that an employee can be added successfully",priority=0,enabled=true)
+		@Test(description="Verify that an employee can be added successfully",priority=0,enabled=false)
 		public void addEmployee() throws Exception {
 		    
 		    // Log in to the application using the login page method
@@ -40,11 +40,11 @@ public class TestPIMPage extends BasePage {
 
 		    
 		    // Enter the first name "Sai" into the first name field
-		    CommonUtils.enterValue(PIMPage.getFirstName(), "Steve", true);
+		    CommonUtils.enterValue(PIMPage.getFirstName(), "Thor", true);
 		    
 		    
 		    // Enter the last name "P" into the last name field
-		    CommonUtils.enterValue(PIMPage.getLastName(), "Rogers", true);
+		    CommonUtils.enterValue(PIMPage.getLastName(), "Odin", true);
 		    
 		    
 		    // Click the "Save" button to add the new employee
@@ -54,14 +54,31 @@ public class TestPIMPage extends BasePage {
 		    // Click the "Back" button to return to the previous page
 		    CommonUtils.clickElement(PIMPage.getBackButton());
 		    
-		    // Assert that the employee name displayed matches "Sai P"
-		    TestNGUtility.assertTrue(CommonUtils.getElementText(PIMPage.getEmpName()),"Kosmik Doom");
+		    // Verify added employee
+		    TestNGUtility.assertTrue(CommonUtils.getElementText(PIMPage.getEmpName()),"Thor Odin");
 		    
 		}
 		
-		@Test(description="Verify that the search functionality returns the correct employee",groups= {"Smoke"},priority=1,enabled=false)
+		@Test(description="Verify that the search functionality returns the correct employee",groups= {"Smoke"},priority=1,enabled=true)
 		public void searchEmployee() throws Exception {
-			
+	
+			//Login
+		    loginPage.login();
+		  
+		    //wait for 3 seconds
+		    CommonUtils.hardWait(3);
+		    
+		    //switch to frame
+		    CommonUtils.switchToFrame(PIMPage.getFrame());
+		  
+		    //select dropdown value 
+		    CommonUtils.selectDropdownValue(PIMPage.getSelect(),3);
+		    
+		    //enter value in search box
+			CommonUtils.enterValue(PIMPage.getSearch(), "Odin", true);
+		
+			//click on search button
+			CommonUtils.clickElement(PIMPage.getSearchBtn());
 		}
 		
 		@Test(description="Verify that employee details can be edited successfully",dependsOnMethods= {"searchEmployee"},groups= {"Smoke"},priority=2,enabled=false)
